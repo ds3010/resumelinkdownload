@@ -7,7 +7,7 @@ const app = express();
 app.use(cors());
 
 app.get("/", (req, res) => {
-  res.download("./resume.pdf");
+  res.download("./daniel_seijas_resume.pdf");
 });
 
 app.listen(PORT);
