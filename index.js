@@ -1,3 +1,5 @@
+var PORT = process.env.PORT || 5000;
+
 const express = require("express");
 const cors = require("cors");
 
@@ -8,4 +10,4 @@ app.get("/", (req, res) => {
   res.download("./resume.pdf");
 });
 
-app.listen(4000);
+app.listen(PORT);
